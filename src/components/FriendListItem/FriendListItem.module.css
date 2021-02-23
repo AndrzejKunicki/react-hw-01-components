@@ -1,0 +1,11 @@
+.avatar {
+  margin-right: 15px;
+}
+
+.isOnline {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-left: 15px;
+}
