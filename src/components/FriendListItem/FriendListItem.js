@@ -5,16 +5,14 @@ import defaultImage from './default.png';
 import styles from './FriendListItem.module.css';
 
 const FriendListItem = ({ isOnline, avatar, name }) => (
-  <li>
+  <li className={styles.item}>
     <span
       className={styles.isOnline}
       style={{ backgroundColor: isOnline ? 'green' : 'red' }}
-    >
-      {' '}
-    </span>
+    ></span>
     <img className={styles.avatar} src={avatar} alt={name} width="48" />
     <p className="name">{name}</p>
-  </>
+  </li>
 );
 
 FriendListItem.defaultProps = {
