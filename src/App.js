@@ -9,6 +9,7 @@ import TransactionHistory from './components/TransactionHistory/TransactionHisto
 import './global.css';
 
 import transactions from './transactions.json';
+import statisticalData from './statistical-data.json'; /////
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <StatisticsList title="Upload stats" />
+      <StatisticsList title="Upload stats" statisticalData={statisticalData} />
       <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
     </Container>

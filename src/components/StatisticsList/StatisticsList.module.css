@@ -9,3 +9,11 @@
 
   text-align: center;
 }
+
+.stat_list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

@@ -19,23 +19,6 @@ const FriendList = ({ friends }) => (
   </div>
 );
 
-// const FriendList = ({ friends }) => (
-//   <div className={styles.friends}>
-//     <ul className={styles.friendList}>
-//       {friends.map(({ isOnline, avatar, name, id }) => (
-//         <li className={styles.item} key={id}>
-//           <FriendListItem
-//             isOnline={isOnline}
-//             avatar={avatar}
-//             name={name}
-//             id={id}
-//           />
-//         </li>
-//       ))}
-//     </ul>
-//   </div>
-// );
-
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
